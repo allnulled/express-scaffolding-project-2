@@ -1,0 +1,33 @@
+{
+  "name": "express-scaffolding-project-2",
+  "version": "1.0.0",
+  "description": "Basic server scaffolding project based on Express.js. Version 2.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon -w src -e js,sql,ejs -x 'npm start'",
+    "dev:test": "nodemon -w src -w test -e js,sql,ejs -x 'npm run test'",
+    "start": "node src/index.js",
+    "test": "node test/index.js"
+  },
+  "keywords": [],
+  "author": "allnulled",
+  "license": "WTFPL",
+  "dependencies": {
+    "@allnulled/asynchandler": "0.0.1",
+    "@allnulled/typed-as": "0.0.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^9.0.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.6.0",
+    "sqlstring": "^2.3.2",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1"
+  }
+}

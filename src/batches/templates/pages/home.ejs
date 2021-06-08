@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%-await include(process.env.PROJECT_SRC + "/batches/templates/partials/headers/common.ejs")%>
+    <title>Home | <%-process.env.APP_PAGE_TITLE%></title>
+</head>
+
+<body>
+    <%-await include(process.env.PROJECT_SRC + "/batches/templates/partials/header.ejs" , { title: "Home" })%>
+    <main>
+        <div id="main-contents">
+            <div id="main-contents-box">
+                <h3><span data-i18n="Welcome to"></span> <b>Express Scaffolding Project</b></h3>
+                <p><span data-i18n="paragraph 1"></span></p>
+                <p><span data-i18n="paragraph 2"></span></p>
+                <p><span data-i18n="paragraph 3"></span></p>
+            </div>
+        </div>
+        <%-await include(process.env.PROJECT_SRC + "/batches/templates/partials/aside.ejs" )%>
+    </main>
+    <%-await include(process.env.PROJECT_SRC + "/batches/templates/partials/footer.ejs" )%>
+</body>
+
+</html>

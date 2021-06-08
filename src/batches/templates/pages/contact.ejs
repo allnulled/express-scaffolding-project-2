@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%-await include(process.env.PROJECT_SRC + "/batches/templates/partials/headers/common.ejs" )%>
+    <title>Contact | <%-process.env.APP_PAGE_TITLE%></title>
+</head>
+
+<body>
+    <%-await include(process.env.PROJECT_SRC + "/batches/templates/partials/header.ejs", { title: "Contact" })%>
+    <main>
+        <div id="main-contents">
+            <div id="main-contents-box">
+                <p><span data-i18n="contact paragraph 1 part 1"></span> <a href="https://github.com/allnulled">https://github.com/allnulled</a>.</p>
+                <p><span data-i18n="contact paragraph 1 part 2"></span> <a href="mailto:carlosjimenohernandez@gmail.com">carlosjimenohernandez@gmail.com</a>.</p>
+            </div>
+        </div>
+        <%-await include(process.env.PROJECT_SRC + "/batches/templates/partials/aside.ejs" )%>
+    </main>
+    <%-await include(process.env.PROJECT_SRC + "/batches/templates/partials/footer.ejs" )%>
+</body>
+
+</html>
